@@ -19,7 +19,7 @@ xhr.responseType = 'json';
 xhr.onload = function(e) {
   if (this.status == 200) {
     console.log('response', this.response); // JSON response  
-    var text = JSON.parse(this.response);
+    var text = this.response;
 }
 };
 xhr.send();
